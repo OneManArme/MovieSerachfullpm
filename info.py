@@ -22,35 +22,35 @@ BOT_TOKEN = environ.get('BOT_TOKEN')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'http://postimg.cc/3dNzBcFX http://postimg.cc/njx6GV3r http://postimg.cc/f3mGdSj1 http://postimg.cc/c6XVfSw1')).split() #SAMPLE PIC 
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/43fbc8a7f73fd3c051dd0.jpg")
+PICS = (environ.get('PICS', 'https://i.ibb.co/ch3n9wsf/x.jpg')).split() 
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/62efbcc4e7580b76530ba.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/e215d12bfd4fa2155e90e.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/0RT.jpg'))
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/f983d857f3ce40795e4b8.jpg'))
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '880087645').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001188070894 -1001274359769 -1002341565790 -1001685364040 -100169224324 -1001775437494 -1002223699552 -1002397109795 -1002461730224 -1002063173963').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001966055101'))  
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001966055101'))  
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002396553917'))  
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002396553917'))  
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))  
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001966055101'))  
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002396553917'))  
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-100') 
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002308503592') 
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002311778305') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 #DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "myserialbot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutofilterBot1')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mvideo:mvideo@cluster0.bpj54.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "asuranj1")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutofilterBot')
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False) # Type True For Turn On MULTIPLE DB FUNTION 
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Erichdaniken:Erichdaniken@cluster0.vhu3d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://video:video@rishi.fzpls33.mongodb.net/?retryWrites=true&w=majority")
 #DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://asuran1:asuran1@cluster0.cyea86p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
    
@@ -59,12 +59,12 @@ IMAGE_FETCH = bool(environ.get('IMAGE_FETCH', True))
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviekoodu2')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/moviekoodu2')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/jsupportgroups')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/jsupportgroups')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/jasuran123_bot')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/')
 
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '0'))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002092476960'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
@@ -72,9 +72,9 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/demoshort/81")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/demoshort/81")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/demoshort/81")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/demoshort/")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/demoshort/")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/demoshort/")
 
 SHORTENER_API2 = environ.get("SHORTENER_API2", "ee6ed3feea08d70e8bfaf2fe30a8c72bae5baa32")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "arolinks.com")
@@ -85,8 +85,8 @@ SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "arolinks.com")
 SHORTENER_API3 = environ.get("SHORTENER_API3", "ee6ed3feea08d70e8bfaf2fe30a8c72bae5baa32")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "arolinks.com")
 
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "28800"))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "28800"))
 
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 MAX_B_TN = environ.get("MAX_B_TN", "8")
